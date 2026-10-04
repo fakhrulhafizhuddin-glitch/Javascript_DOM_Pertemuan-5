@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">
+            <div class="logo-icon">✓</div>
+            <div>
+                <h1>To Do List Penugasan</h1>
+                <p>Kelola tugasmu dengan lebih teratur.</p>
+            </div>
+        </div>
+
+        <div class="tanggal">
+            <span id="hari">Hari ini</span>
+            <b id="tanggal">-</b>
+        </div>
+    </header>
+
+
+    <section class="stats">
+
+        <div class="stat">
+            <div class="icon purple">📋</div>
+            <div>
+                <small>Total Tugas</small>
+                <strong id="total">0</strong>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="icon green">✓</div>
+            <div>
+                <small>Selesai</small>
+                <strong id="selesai">0</strong>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="icon orange">◷</div>
+            <div>
+                <small>Belum Selesai</small>
+                <strong id="belum">0</strong>
+            </div>
+        </div>
+
+    </section>
+
+
+    <main class="card">
+
+        <div class="judul">
+            <div>
+                <span>MY TASKS</span>
+                <h2>Daftar Tugas</h2>
+            </div>
+
+            <b id="progress-text">0%</b>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="input-tugas"
+                placeholder="Apa yang ingin kamu kerjakan?"
+            >
+
+            <button id="tambah">
+                + Tambah
+            </button>
+        </div>
+
+
+        <div class="filter">
+
+            <div>
+                <button class="filter-btn active" data-filter="all">
+                    Semua
+                </button>
+
+                <button class="filter-btn" data-filter="active">
+                    Aktif
+                </button>
+
+                <button class="filter-btn" data-filter="done">
+                    Selesai
+                </button>
+            </div>
+
+            <span id="jumlah">0 tugas</span>
+
+        </div>
+
+
+        <ul id="daftar"></ul>
+
+
+        <div id="kosong" class="kosong">
+            <div>✓</div>
+            <h3>Belum ada tugas</h3>
+            <p>Tambahkan tugas pertama kamu.</p>
+        </div>
+
+    </main>
+
+
+    <footer>
+        To Do List Penugasan © 2026 · Fakhrul Hafizhuddin Anwar || Kelas 3C
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
